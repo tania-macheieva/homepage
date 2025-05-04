@@ -67,7 +67,6 @@ body {
   text-decoration-color: var(--text-decoration-color);
 }
 
-
 @media screen and (max-width: 576px) {
 
   .main-info,
@@ -90,11 +89,11 @@ body {
 
 
 /* Contact info styles */
-.contact_info_container {
+.contact-info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .contact-info__header,
@@ -114,12 +113,7 @@ body {
   margin-bottom: 30px;
 }
 
-.contact-info-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 
 .contact-info__block--avatar {
   display: flex;
@@ -141,6 +135,16 @@ body {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+.contact-info__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info__block--center {
+  justify-content: center;
 }
 
 .contact-info__item {
